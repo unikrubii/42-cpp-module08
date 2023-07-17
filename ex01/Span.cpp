@@ -34,6 +34,31 @@ void Span::addNumber( int n ) {
 		throw FullException();
 }
 
+void Span::addMultipleNumbers( std::vector<int>::iterator begin, std::vector<int>::iterator end ) {
+	if ( _arr.size() + end - begin <= _size )
+		_arr.insert( _arr.end(), begin, end );
+	else
+		throw FullException();
+}
+
+void Span::addMultipleNumbers( std::vector<int> &vec ) {
+	if ( _arr.size() + vec.size() <= _size )
+		_arr.insert( _arr.end(), vec.begin(), vec.end() );
+	else
+		throw FullException();
+}
+
+void Span::addMultipleNumbers( int number ) {
+	int sizeToAdd = _size - _arr.size();
+	if ( _arr.size() == 0 ) {
+		_arr.resize( _size, number );
+	}
+	else if ( _arr.size() < _size )
+		_arr.insert( _arr.end(), sizeToAdd, number );
+	else
+		throw FullException();
+}
+
 int Span::shortestSpan() {
 	if ( _arr.size() < 2 )
 		throw NotEnoughNumbersException();
@@ -66,6 +91,13 @@ int Span::longestSpan() {
 		}
 	}
 	return max;
+}
+
+void Span::printSpan() {
+	std::cout << "Span: ";
+	for ( std::vector<int>::iterator it = _arr.begin(); it != _arr.end(); it++ )
+		std::cout << *it << " ";
+	std::cout << std::endl;
 }
 
 // Exceptions
