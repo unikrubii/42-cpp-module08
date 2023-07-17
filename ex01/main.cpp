@@ -114,7 +114,7 @@ int main() {
 			vec.push_back( 4 );
 			vec.push_back( 5 );
 
-			sp.addMultipleNumber( vec.begin() + 1, vec.begin() + 4 );
+			sp.addMultipleNumbers( vec.begin() + 1, vec.begin() + 4 );
 			sp.printSpan();
 			std::cout << "Shortest span: " << sp.shortestSpan() << std::endl;
 			std::cout << "Longest span: " << sp.longestSpan() << std::endl;
@@ -136,7 +136,7 @@ int main() {
 			vec.push_back( 5 );
 			vec.push_back( 6 );
 
-			sp.addMultipleNumber( vec.begin() + 1, vec.end() );
+			sp.addMultipleNumbers( vec.begin() + 1, vec.end() );
 			sp.printSpan();
 		}
 		catch ( std::exception &e ) {
@@ -155,7 +155,7 @@ int main() {
 			vec.push_back( 4 );
 			vec.push_back( 5 );
 
-			sp.addMultipleNumber( vec );
+			sp.addMultipleNumbers( vec );
 			sp.printSpan();
 			std::cout << "Shortest span: " << sp.shortestSpan() << std::endl;
 			std::cout << "Longest span: " << sp.longestSpan() << std::endl;
@@ -177,7 +177,7 @@ int main() {
 			vec.push_back( 5 );
 			vec.push_back( 6 );
 
-			sp.addMultipleNumber( vec );
+			sp.addMultipleNumbers( vec );
 			sp.printSpan();
 		}
 		catch ( std::exception &e ) {
@@ -198,7 +198,7 @@ int main() {
 			vec.push_back( 6 );
 			vec.push_back( 7 );
 
-			sp.addMultipleNumber( vec.begin() + 1, vec.begin() + 5 );
+			sp.addMultipleNumbers( vec.begin() + 1, vec.begin() + 5 );
 			sp.printSpan();
 			std::cout << "Shortest span: " << sp.shortestSpan() << std::endl;
 			std::cout << "Longest span: " << sp.longestSpan() << std::endl;
@@ -221,7 +221,7 @@ int main() {
 			vec.push_back( 6 );
 			vec.push_back( 7 );
 
-			sp.addMultipleNumber( vec.begin() + 1, vec.end() );
+			sp.addMultipleNumbers( vec.begin() + 1, vec.end() );
 			sp.printSpan();
 		}
 		catch ( std::exception &e ) {
@@ -234,7 +234,7 @@ int main() {
 		try {
 			Span sp = Span( 5 );
 
-			sp.addMultipleNumber( 42 );
+			sp.addMultipleNumbers( 42 );
 			sp.printSpan();
 			std::cout << "Shortest span: " << sp.shortestSpan() << std::endl;
 			std::cout << "Longest span: " << sp.longestSpan() << std::endl;
@@ -250,7 +250,7 @@ int main() {
 			Span sp = Span( 5 );
 			sp.addNumber( 1 );
 
-			sp.addMultipleNumber( 42 );
+			sp.addMultipleNumbers( 42 );
 			sp.printSpan();
 			std::cout << "Shortest span: " << sp.shortestSpan() << std::endl;
 			std::cout << "Longest span: " << sp.longestSpan() << std::endl;
