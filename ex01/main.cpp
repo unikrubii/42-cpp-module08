@@ -17,7 +17,7 @@ int main() {
 			std::cout << "Longest span: " << sp.longestSpan() << std::endl;
 		}
 		catch ( std::exception &e ) {
-			std::cout << e.what() << std::endl;
+			std::cerr << e.what() << std::endl;
 		}
 	}
 	std::cout << "======================" << std::endl;
@@ -32,7 +32,7 @@ int main() {
 			std::cout << "Longest span: " << sp.longestSpan() << std::endl;
 		}
 		catch ( std::exception &e ) {
-			std::cout << e.what() << std::endl;
+			std::cerr << e.what() << std::endl;
 		}
 	}
 	std::cout << "======================" << std::endl;
@@ -50,7 +50,7 @@ int main() {
 			sp.addNumber( 6 );
 		}
 		catch ( std::exception &e ) {
-			std::cout << e.what() << std::endl;
+			std::cerr << e.what() << std::endl;
 		}
 	}
 	std::cout << "======================" << std::endl;
@@ -62,7 +62,7 @@ int main() {
 			std::cout << "Shortest span: " << sp.shortestSpan() << std::endl;
 		}
 		catch ( std::exception &e ) {
-			std::cout << e.what() << std::endl;
+			std::cerr << e.what() << std::endl;
 		}
 	}
 	std::cout << "======================" << std::endl;
@@ -75,7 +75,7 @@ int main() {
 			std::cout << "Shortest span: " << sp.shortestSpan() << std::endl;
 		}
 		catch ( std::exception &e ) {
-			std::cout << e.what() << std::endl;
+			std::cerr << e.what() << std::endl;
 		}
 	}
 	std::cout << "======================" << std::endl;
@@ -86,7 +86,7 @@ int main() {
 			sp.longestSpan();
 		}
 		catch ( std::exception &e ) {
-			std::cout << e.what() << std::endl;
+			std::cerr << e.what() << std::endl;
 		}
 	}
 	std::cout << "======================" << std::endl;
@@ -99,7 +99,7 @@ int main() {
 			std::cout << "Longest span: " << sp.longestSpan() << std::endl;
 		}
 		catch ( std::exception &e ) {
-			std::cout << e.what() << std::endl;
+			std::cerr << e.what() << std::endl;
 		}
 	}
 	std::cout << "======================" << std::endl;
@@ -120,7 +120,7 @@ int main() {
 			std::cout << "Longest span: " << sp.longestSpan() << std::endl;
 		}
 		catch ( std::exception &e ) {
-			std::cout << e.what() << std::endl;
+			std::cerr << e.what() << std::endl;
 		}
 	}
 	std::cout << "======================" << std::endl;
@@ -140,7 +140,7 @@ int main() {
 			sp.printSpan();
 		}
 		catch ( std::exception &e ) {
-			std::cout << e.what() << std::endl;
+			std::cerr << e.what() << std::endl;
 		}
 	}
 	std::cout << "======================" << std::endl;
@@ -161,7 +161,7 @@ int main() {
 			std::cout << "Longest span: " << sp.longestSpan() << std::endl;
 		}
 		catch ( std::exception &e ) {
-			std::cout << e.what() << std::endl;
+			std::cerr << e.what() << std::endl;
 		}
 	}
 	std::cout << "======================" << std::endl;
@@ -181,7 +181,7 @@ int main() {
 			sp.printSpan();
 		}
 		catch ( std::exception &e ) {
-			std::cout << e.what() << std::endl;
+			std::cerr << e.what() << std::endl;
 		}
 	}
 	std::cout << "======================" << std::endl;
@@ -204,7 +204,7 @@ int main() {
 			std::cout << "Longest span: " << sp.longestSpan() << std::endl;
 		}
 		catch ( std::exception &e ) {
-			std::cout << e.what() << std::endl;
+			std::cerr << e.what() << std::endl;
 		}
 	}
 	std::cout << "======================" << std::endl;
@@ -225,7 +225,7 @@ int main() {
 			sp.printSpan();
 		}
 		catch ( std::exception &e ) {
-			std::cout << e.what() << std::endl;
+			std::cerr << e.what() << std::endl;
 		}
 	}
 	std::cout << "======================" << std::endl;
@@ -240,7 +240,7 @@ int main() {
 			std::cout << "Longest span: " << sp.longestSpan() << std::endl;
 		}
 		catch ( std::exception &e ) {
-			std::cout << e.what() << std::endl;
+			std::cerr << e.what() << std::endl;
 		}
 	}
 	std::cout << "======================" << std::endl;
@@ -256,7 +256,7 @@ int main() {
 			std::cout << "Longest span: " << sp.longestSpan() << std::endl;
 		}
 		catch ( std::exception &e ) {
-			std::cout << e.what() << std::endl;
+			std::cerr << e.what() << std::endl;
 		}
 	}
 	return 0;
